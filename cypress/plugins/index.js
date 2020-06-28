@@ -12,7 +12,13 @@
 // the project's config changing)
 
 const cucumber = require('cypress-cucumber-preprocessor').default
+const SharePointLogin = require('./sharepoint-login/').SharePointLogin;
+const NodeAuth = require('./node-auth/').NodeAuth;
+
 module.exports = (on, config) => {
-  on('file:preprocessor', cucumber())
+    on('file:preprocessor', cucumber()),
+        on('task', {SharePointLogin}),
+        on('task', {NodeAuth})
 }
+
 

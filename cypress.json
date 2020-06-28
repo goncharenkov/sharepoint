@@ -1,15 +1,16 @@
 {
   "ignoreTestFiles": "*.js",
   "testFiles": "**/*.{feature,features}",
-
   "chromeWebSecurity": false,
-
-  "grant_type": "password",
-  "clientId": "1289b633-cb65-45cb-a358-8d5803ac072a",
-  "clientSecret": "1Yn6jQ6~82lcuaWv0~aj9ty0X_z_w__125",
-
-  "resource": "1289b633-cb65-45cb-a358-8d5803ac072a",
-  "tenantId": "4e7a9ebf-d3af-4cf9-b4ec-f233ff90b1ab",
-  "username": "sptestautomation@antongshortpoint.onmicrosoft.com",
-  "password": "Testautomation1"
+  "viewportWidth": 1200,
+  "viewportHeight": 1000,
+  "env": {
+    "username": "sptestautomation@antongshortpoint.onmicrosoft.com",
+    "password": "Testautomation1",
+    "tenant": "4e7a9ebf-d3af-4cf9-b4ec-f233ff90b1ab",
+    "clientid": "1289b633-cb65-45cb-a358-8d5803ac072a",
+    "clientsecret": "1Yn6jQ6~82lcuaWv0~aj9ty0X_z_w__125",
+    "resource": "1289b633-cb65-45cb-a358-8d5803ac072a"
+  },
+  "defaultCommandTimeout": 10000
 }
